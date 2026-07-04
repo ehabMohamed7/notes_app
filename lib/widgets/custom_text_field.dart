@@ -4,7 +4,7 @@ class CustomTextField extends StatelessWidget {
   const CustomTextField({
     super.key,
     required this.lableText,
-    this.contentPadding = 24,
+    this.contentPadding = 20,
     this.maxLines = 1,
   });
   final String lableText;
@@ -20,7 +20,7 @@ class CustomTextField extends StatelessWidget {
       decoration: InputDecoration(
         contentPadding: EdgeInsets.all(contentPadding),
         labelText: lableText,
-        labelStyle: TextStyle(color: Colors.white),
+        labelStyle: TextStyle(color: Colors.cyanAccent),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(8),
           borderSide: BorderSide(color: Colors.white),

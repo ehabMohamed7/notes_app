@@ -23,7 +23,7 @@ class NoteItem extends StatelessWidget {
 
             subtitle: Text(
               'Welcome to this app \n with ehab',
-              style: TextStyle(color: Colors.black45, fontSize: 20),
+              style: TextStyle(color: Colors.black45, fontSize: 18),
             ),
 
             trailing: IconButton(
@@ -31,7 +31,7 @@ class NoteItem extends StatelessWidget {
                 // TODO remember to implementation
               },
 
-              icon: Icon(Icons.delete, color: Colors.black, size: 35),
+              icon: Icon(Icons.delete, color: Colors.black, size: 30),
             ),
           ),
 
@@ -39,7 +39,7 @@ class NoteItem extends StatelessWidget {
             padding: const EdgeInsets.only(right: 30, top: 16),
             child: Text(
               'Jul 2,2026',
-              style: TextStyle(color: Colors.black45, fontSize: 20),
+              style: TextStyle(color: Colors.black45, fontSize: 18),
             ),
           ),
         ],

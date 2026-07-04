@@ -3,11 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:notes2_app/screens/notes_screen.dart';
 
 void main() {
-  runApp(
-    DevicePreview(
-      builder: (context) => NotesApp(), // Wrap your app
-    ),
-  );
+  runApp(NotesApp());
 }
 
 class NotesApp extends StatelessWidget {
