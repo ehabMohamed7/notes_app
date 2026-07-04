@@ -10,7 +10,11 @@ class BodyOfNotesScreen extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 16),
       child: Column(
-        children: const [SizedBox(height: 50), CustomAppBar(), NotesListView()],
+        children: const [
+          SizedBox(height: 50),
+          CustomAppBar(appBarTitle: 'Notes', icon: Icons.delete),
+          NotesListView(),
+        ],
       ),
     );
   }

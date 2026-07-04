@@ -9,6 +9,7 @@ class NotesScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.cyanAccent,
         onPressed: () {
           showModalBottomSheet(
             shape: RoundedRectangleBorder(
@@ -22,7 +23,7 @@ class NotesScreen extends StatelessWidget {
           );
         },
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(26)),
-        child: Icon(Icons.add),
+        child: Icon(Icons.add, color: Colors.black),
       ),
       body: BodyOfNotesScreen(),
     );
