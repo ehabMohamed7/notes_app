@@ -6,6 +6,13 @@ class NotesScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(body: BodyOfNotesScreen());
+    return Scaffold(
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(26)),
+        child: Icon(Icons.add),
+      ),
+      body: BodyOfNotesScreen(),
+    );
   }
 }
