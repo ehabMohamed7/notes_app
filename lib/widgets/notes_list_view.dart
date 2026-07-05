@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:notes2_app/widgets/note_item.dart';
+
+import 'note_item.dart';
 
 class NotesListView extends StatelessWidget {
   const NotesListView({super.key});

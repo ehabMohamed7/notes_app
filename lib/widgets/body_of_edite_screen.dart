@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:notes2_app/widgets/custom_appbar.dart';
-import 'package:notes2_app/widgets/custom_text_field.dart';
+import 'custom_appbar.dart';
+import 'custom_text_field.dart';
 
 class BodyOfEditeScreen extends StatelessWidget {
   const BodyOfEditeScreen({super.key});

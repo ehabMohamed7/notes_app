@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:notes2_app/widgets/custom_appbar.dart';
-import 'package:notes2_app/widgets/notes_list_view.dart';
+
+import 'custom_appbar.dart';
+import 'notes_list_view.dart';
 
 class BodyOfNotesScreen extends StatelessWidget {
   const BodyOfNotesScreen({super.key});
