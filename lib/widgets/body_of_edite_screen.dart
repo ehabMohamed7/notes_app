@@ -13,7 +13,7 @@ class BodyOfEditeScreen extends StatelessWidget {
         children: [
           SizedBox(height: 50),
           CustomAppBar(appBarTitle: 'Edite note', icon: Icons.check),
-          SizedBox(height: 26),
+          SizedBox(height: 40),
           CustomTextField(lableText: 'Title'),
           SizedBox(height: 24),
           CustomTextField(lableText: 'Content', maxLines: 4),
