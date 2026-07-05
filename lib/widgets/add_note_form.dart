@@ -1,0 +1,49 @@
+import 'package:flutter/material.dart';
+import 'package:notes2_app/widgets/custom_botton.dart';
+import 'package:notes2_app/widgets/custom_text_field.dart';
+
+class AddNoteForm extends StatefulWidget {
+  const AddNoteForm({super.key});
+
+  @override
+  State<AddNoteForm> createState() => _AddNoteFormState();
+}
+
+class _AddNoteFormState extends State<AddNoteForm> {
+  final _formKey = GlobalKey<FormState>();
+  String? title, describtion;
+  @override
+  Widget build(BuildContext context) {
+    return Form(
+      key: _formKey,
+      child: Column(
+        children: [
+          CustomTextFormField(
+            lableText: 'Title',
+            onSaved: (value) {
+              title = value;
+            },
+          ),
+          SizedBox(height: 24),
+          CustomTextFormField(
+            lableText: 'Content',
+            maxLines: 4,
+            onSaved: (value) {
+              describtion = value;
+            },
+          ),
+          SizedBox(height: 60),
+
+          CustomBotton(
+            onTap: () {
+              if (_formKey.currentState!.validate()) {
+                _formKey.currentState!.save();
+              }
+            },
+          ),
+          SizedBox(height: 60),
+        ],
+      ),
+    );
+  }
+}
